@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUUQ | Geri Bildirim Formu</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div class="brand">
+          <span class="brand-mark">
+            <img class="brand-logo" src="logo.png" alt="LUUQ logo" />
+          </span>
+          <div>
+            <h1 class="brand-name"></h1>
+            <p class="brand-subtitle"></p>
+          </div>
+        </div>
+        <p class="intro"> Değerli misafirlerimiz, Kaliteyi artırmak amacıyla geri bildirimleriniz bizim için çok değerlidir. Teşekkür ederiz.</p>
+      </header>
+
+      <section class="card">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title">Geri Bildirim Formu</h2>
+            <p class="card-subtitle"></p>
+          </div>
+          <div class="meta">
+            <span class="pill">~30 sn</span>
+            <span class="pill ghost">Gizli</span>
+          </div>
+        </div>
+
+        <form data-form class="form">
+          <div class="field">
+            <label for="adSoyad">
+              Ad Soyad <span class="optional">(isteğe bağlı)</span>
+            </label>
+            <input id="adSoyad" name="ad_soyad" type="text" placeholder="İsteğe bağlı" />
+          </div>
+
+          <div class="field">
+            <label for="mesaj">Mesaj <span class="required">*</span></label>
+            <textarea
+              id="mesaj"
+              name="mesaj"
+              required
+              placeholder="Öneri veya şikayetinizi yazın."
+            ></textarea>
+            <p class="helper">Lütfen kısa ve net yazın, ekip hızlı aksiyon alır.</p>
+          </div>
+
+          <div class="toggle-row">
+            <button class="btn ghost" type="button" data-toggle="survey" aria-expanded="false">
+              Hizmet Değerlendirmesini Aç
+            </button>
+          </div>
+
+          <div class="survey" data-survey hidden>
+            <h3>Hizmet Değerlendirmesi</h3>
+            <p class="muted">Her başlık için 1-5 arası puan verin.</p>
+
+            <div class="rating-row">
+              <span class="rating-label">Hizmet</span>
+              <div class="rating-group" role="radiogroup" aria-label="Hizmet">
+                <label class="rating-pill">
+                  <input type="radio" name="puan_hizmet" value="1" />
+                  <span>1</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_hizmet" value="2" />
+                  <span>2</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_hizmet" value="3" />
+                  <span>3</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_hizmet" value="4" />
+                  <span>4</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_hizmet" value="5" />
+                  <span>5</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span class="rating-label">Ürün Kalitesi</span>
+              <div class="rating-group" role="radiogroup" aria-label="Ürün Kalitesi">
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ürün_kalitesi" value="1" />
+                  <span>1</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ürün_kalitesi" value="2" />
+                  <span>2</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ürün_kalitesi" value="3" />
+                  <span>3</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ürün_kalitesi" value="4" />
+                  <span>4</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ürün_kalitesi" value="5" />
+                  <span>5</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span class="rating-label">Temizlik</span>
+              <div class="rating-group" role="radiogroup" aria-label="Temizlik">
+                <label class="rating-pill">
+                  <input type="radio" name="puan_temizlik" value="1" />
+                  <span>1</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_temizlik" value="2" />
+                  <span>2</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_temizlik" value="3" />
+                  <span>3</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_temizlik" value="4" />
+                  <span>4</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_temizlik" value="5" />
+                  <span>5</span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="rating-row">
+              <span class="rating-label">Lavabo Temizliği</span>
+              <div class="rating-group" role="radiogroup" aria-label="Lavabo Temizliği">
+                <label class="rating-pill">
+                  <input type="radio" name="puan_lavabo_temizligi" value="1" />
+                  <span>1</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_lavabo_temizligi" value="2" />
+                  <span>2</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_lavabo_temizligi" value="3" />
+                  <span>3</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_lavabo_temizligi" value="4" />
+                  <span>4</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_lavabo_temizligi" value="5" />
+                  <span>5</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span class="rating-label">Ortam</span>
+              <div class="rating-group" role="radiogroup" aria-label="Ortam">
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ortam" value="1" />
+                  <span>1</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ortam" value="2" />
+                  <span>2</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ortam" value="3" />
+                  <span>3</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ortam" value="4" />
+                  <span>4</span>
+                </label>
+                <label class="rating-pill">
+                  <input type="radio" name="puan_ortam" value="5" />
+                  <span>5</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="anketYorum">
+                Değerlendirme notu <span class="optional">(isteğe bağlı)</span>
+              </label>
+              <textarea
+                id="anketYorum"
+                name="anket_yorum"
+                placeholder="Kısa yorumunuzu yazabilirsiniz."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Gönder</button>
+            <span class="helper">.</span>
+          </div>
+
+          <div class="success" data-success hidden aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
