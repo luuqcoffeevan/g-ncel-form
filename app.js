@@ -1,6 +1,5 @@
 const FORM_URL = "https://luuqcoffeevan.github.io/g-ncel-form/";
-const SUBMIT_URL =
-  "https://script.google.com/macros/s/AKfycbxxGSy1uO7_EPLnShlgz_GWsVqZfJjNXG2AoGKpE6IpOhq3uOe5E5S9fXKA_DUgrFkF_Q/exec";
+const SUBMIT_URL ="https://script.google.com/macros/s/AKfycbxxGSy1uO7_EPLnShlgz_GWsVqZfJjNXG2AoGKpE6IpOhq3uOe5E5S9fXKA_DUgrFkF_Q/exec";
 const SUBMIT_TIMEOUT_MS = 15000;
 const RATING_FIELDS = [
   "puan_hizmet",
@@ -20,17 +19,7 @@ const buildQrUrl = (value) =>
 
 const syncQr = () => {
   const images = document.querySelectorAll("[data-qr-img]");
-  const links = document.querySelectorAll("[data-form-link]");
-  const downloads = document.querySelectorAll("[data-qr-download]");
   const qrUrl = buildQrUrl(FORM_URL);
-
-  links.forEach((link) => {
-    link.href = FORM_URL;
-  });
-
-  downloads.forEach((link) => {
-    link.href = qrUrl;
-  });
 
   images.forEach((img) => {
     img.src = qrUrl;
