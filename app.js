@@ -1,6 +1,6 @@
 const FORM_URL = "https://luuqcoffeevan.github.io/g-ncel-form/";
 const SUBMIT_URL =
-  "https://script.google.com/macros/s/AKfycbyJzZ2hQoalKZN_9jb6D8XlMiM49NXeE1Z7cmmkRxoBCplptWnBIRHmANyC4AWmLVqy/exec";
+  "https://script.google.com/macros/s/AKfycbx4aXduXGdqK9x3ExP4OXcBgbe85egFsgD9lKXeLpXJ_49JEqKHQf34vH8zZrG52CgZbw/exec";
 const SUBMIT_TIMEOUT_MS = 15000;
 const RATING_FIELDS = [
   "puan_hizmet",
