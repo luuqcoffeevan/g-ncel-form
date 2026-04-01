@@ -1,4 +1,4 @@
-const FORM_URL = "https://luuqcoffeevan.github.io/LUUQ-FORM/";
+const FORM_URL = "https://luuqcoffeevan.github.io/g-ncel-form/";
 const SUBMIT_URL =
   "https://script.google.com/macros/s/AKfycbyJzZ2hQoalKZN_9jb6D8XlMiM49NXeE1Z7cmmkRxoBCplptWnBIRHmANyC4AWmLVqy/exec";
 const SUBMIT_TIMEOUT_MS = 15000;
