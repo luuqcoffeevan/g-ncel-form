@@ -109,19 +109,6 @@ body.qr-only::before {
   border-color: rgba(122, 63, 35, 0.2);
 }
 
-.qr-only__badge {
-  margin-top: 6px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(122, 63, 35, 0.18);
-  background: rgba(241, 162, 59, 0.16);
-  color: #7a3f23;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 .qr-only__content {
   display: grid;
   gap: 6px;
@@ -166,19 +153,6 @@ body.qr-only::before {
   padding: 6px;
   object-fit: contain;
   display: block;
-}
-
-.qr-only__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 2px;
-}
-
-.qr-only__actions .btn {
-  margin-top: 0;
-  min-width: 126px;
 }
 
 .page {
@@ -638,22 +612,9 @@ textarea {
     border-radius: 16px;
     padding: 10px;
   }
-
-  .qr-only__actions {
-    width: 100%;
-  }
-
-  .qr-only__actions .btn {
-    flex: 1 1 140px;
-    min-width: 0;
-  }
 }
 
 @media print {
-  .qr-only__actions {
-    display: none;
-  }
-
   .qr-only__card {
     border: none;
     padding: 0;
